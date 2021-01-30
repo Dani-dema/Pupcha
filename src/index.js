@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Puzzle from 'react-image-puzzle'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    { 3>4 &&
+     <Puzzle
+    size={400}
+    image='https://upload.wikimedia.org/wikipedia/en/6/68/John_Coltrane_-_Blue_Train.jpg'
+    level={2}/>
+    }
   </React.StrictMode>,
   document.getElementById('root')
 );
