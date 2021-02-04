@@ -26,6 +26,53 @@
 .App-link {
   color: #61dafb;
 }
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+
+.footer{
+  background-color: #679ad1;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+.pranoi{
+  margin-left:40px;
+
+}
+.punoi {
+  font-size: 15px;
+}
+
+.navbar-dark {
+  background-color: #679ad1;
+}
+.home{
+  background-color: darkorange;
+}
+.carousel{
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+.meshume{
+  color: blue;
+  font-size: small;
+}
+
+.tabcontent{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

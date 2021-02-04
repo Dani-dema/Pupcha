@@ -3,16 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Puzzle from 'react-image-puzzle'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    { 3>4 &&
-     <Puzzle
-    size={400}
-    image='https://upload.wikimedia.org/wikipedia/en/6/68/John_Coltrane_-_Blue_Train.jpg'
-    level={2}/>
-    }
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
