@@ -64,7 +64,7 @@ import Player from './MusicComponents';
                     <TabContent activeTab={activeTab} className="tabcontent">
                         <TabPane tabId="2">
                         <Row >
-                        <Col sm="4">  <img  style={{marginLeft:"30px"}} src="assets/images/image-captcha.png" height="400" width="320" alt="Ristorante Con Fusion" /> </Col> 
+                        <Col sm="4">  <img  style={{marginLeft:"30px"}} src="assets/images/image-captcha.png" height="400" width="320" alt="Captcha" /> </Col> 
                             <Col sm="6">
                             <h4>Captcha bazuar ne imazhe</h4>
                             <p>CAPTCHA të bazuara në imazhe u zhvilluan për të zëvendësuar ato të bazuara në tekst. Këto CAPTCHA përdorin elemente grafikë të njohur, të tilla si foto të kafshëve, forma ose skena. Në mënyrë tipike, CAPTCHA-të e bazuara në imazhe u kërkojnë përdoruesve të zgjedhin imazhe që përputhen me një temë ose të identifikojnë imazhe që nuk përshtaten.ë pamjaftueshme të njohjes së tekstit, por gjithashtu mund të jetë e vështirë për njerëzit për t'u interpretuar.</p>
