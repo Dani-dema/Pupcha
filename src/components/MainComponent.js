@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Puzzle from 'react-image-puzzle';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponents';
-import PuzzleComponent from './PuzzleComponent';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect} from 'react-router-dom';
 
 class Main extends Component {
   render() {

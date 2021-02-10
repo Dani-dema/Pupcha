@@ -1,6 +1,5 @@
-import {Component, React, useState} from 'react';
-import { Button, Modal , ModalHeader, ModalBody, Alert} from 'reactstrap';
-import classnames from 'classnames';
+import {Component, React} from 'react';
+import { Button, Modal , ModalHeader, ModalBody} from 'reactstrap';
 import Puzzle from 'react-image-puzzle';
 import History from './HistoryComponents'
 import CarouselComponent from './CarouseComponent';
@@ -13,7 +12,7 @@ class Home extends Component  {
     super(props);
         this.state = {
             isModalOpen: false,
-            fotot:['assets/images/ne.jpeg','assets/images/minions.webp','assets/images/patriku.jpg'],
+            fotot:['assets/images/ne.jpeg','assets/images/minion.jpeg','assets/images/patriku.jpg'],
             open:false,
             prova:false,
           };
@@ -59,7 +58,7 @@ toggleModal() {
                 <div className="col-12"  style={{marginTop: "20px"}}>
                     <h1 className="titull"> Captcha </h1>
                     <p>Nëse përdorni Web, ju padyshim keni hasur në një shpikje të bezdisshme të quajtur CAPTCHA. Ato janë koleksione letrash të zbehta, të shtrira dhe të dërrmuara, me njolla ngjyrash, të cilat shpesh duhet të deshifrohen përpara se të dërgoni një email,të krijoni një account, të postoni një koment ose të blini një biletë.                 
-                    Termi u krijua në 2003 nga Luis von Ahn, Manuel Blum, Nicholas J. Hopper dhe John Langford. Lloji më i zakonshëm i CAPTCHA (shfaqet si Version 1.0) u shpik për herë të parë në 1997 nga dy grupe që punonin paralelisht. Kjo formë e CAPTCHA kërkon që përdoruesitë vlerësojë saktë dhe të fusë një sekuencë shkronjash ose numrash të perceptueshëm në një imazh të deformuar të shfaqur në ekranin e tij.<br/>
+                    Termi u krijua në 2003 nga Luis von Ahn, Manuel Blum, Nicholas J. Hopper dhe John Langford. Lloji më i zakonshëm i CAPTCHA (shfaqet si Version 1.0) u shpik për herë të parë në 1997 nga dy grupe që punonin paralelisht. Kjo formë e CAPTCHA kërkon që përdoruesit të vlerësojnë saktë dhe të fusin një sekuencë shkronjash ose numrash të perceptueshëm në një imazh të deformuar të shfaqur në ekranin e tyre.<br/>
                     Kjo procedurë e identifikimit të përdoruesit ka marrë shumë kritika, veçanërisht nga njerëzit me aftësi të kufizuara, por edhe nga njerëz të tjerë që mendojnë se puna e tyre e përditshme ngadalësohet nga fjalët e shtrembëruara që janë të vështira për t'u lexuar. Njeriut mesatar i duhen afërsisht 10 sekonda për të zgjidhur një CAPTCHA tipike.  <hr/></p>
                 </div>
                 <div className="carousel" style={{marginLeft:'-20px'}}>
@@ -92,11 +91,11 @@ toggleModal() {
                          Shfaq captcha
                       </Button>
 
-                      <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} style={{width:'19%'}}>
+                      <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} style={{width:'29%'}}>
                         <ModalHeader toggle={this.toggleModal} >PUPCHA </ModalHeader>
                         <ModalBody>
                           <p>Per te vazhduar me tej zgjidheni PUPCHA!</p>
-                                      <Puzzle
+                                      <Puzzle style={{width:'100%'}}
                                             image= {this.state.fotot[this.getRndInteger(0,2)]}
                                             level={2}
                                             onDone={this.doneCaptcha}
@@ -105,18 +104,18 @@ toggleModal() {
                         </ModalBody>
                       </Modal>
           
-                      <Modal isOpen={this.state.open}  toggle={this.toggleModal1} style={{width:'29%'}}>
+                      <Modal isOpen={this.state.open}  toggle={this.toggleModal1} style={{width:'28%'}}>
                         <ModalHeader toggle={this.toggleModal1}> Pergezime!  </ModalHeader>
                         <ModalBody>
-                               <img  src="assets/images/sukses.jpg" height="400" width="100%" alt="Captcha" />
+                               <img  src="assets/images/sukses.jpg" height="100%" width="100%" alt="Captcha" />
                         </ModalBody>
                       </Modal>
 
                      {(!this.state.isModalOpen && this.state.prova) &&
-                      <Modal isOpen={this.state.prova} toggle={this.toggleModal2} style={{width:'29%'}}>
+                      <Modal isOpen={this.state.prova} toggle={this.toggleModal2} style={{width:'28%'}}>
                         <ModalHeader toggle={this.toggleModal2}> Provo perseri! </ModalHeader>
                         <ModalBody>
-                               <img  src="assets/images/deshtim.jpeg" height="400" width="100%" alt="Captcha" />
+                               <img  src="assets/images/deshtim.jpeg" height="100%" width="100%" alt="Captcha" />
                         </ModalBody>
                         </Modal>
                     }

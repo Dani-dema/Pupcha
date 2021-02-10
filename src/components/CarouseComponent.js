@@ -71,6 +71,7 @@ const slides = items.map((item) => {
                     <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                     </Carousel>
+                    <br/>
                 </div>
 
      )

@@ -10,7 +10,7 @@ class History extends Component {
                     <br/>
                     Veshtiresi tjeter eshte qe captcha kane nje kohezgjatje prej 2 minutash. Keshtu qe perdoruesit duhet te zgjidhin captcha patjeter gjate kesaj kohezgjatje.
                     <br/>
-                    Nje tjeter problem eshte per personat qe kane problem me shkimi. Duke qene se captcha kryesisht zgjidhen nga libra te vjetra, ato nuk pamje te qarte. 
+                    Nje tjeter problem eshte per personat qe kane probleme me shkimin. Duke qene se captcha kryesisht zgjidhen nga libra te vjeter, ato nuk pamje te qarte. 
 
                 </p>
              </div>
