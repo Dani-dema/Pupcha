@@ -1,3 +1,8 @@
+# PUPCHA 
+Pupcha is a simple single page application made by React. The main
+purpose is to create a new captcha that will be easy to solve by non bot
+user.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
