@@ -33,7 +33,7 @@
   min-height:400px;
 }
 .footer{
-  background-color:#4a889b;
+  background-color:#8F7E4F;
   margin:0px auto;
   padding: 20px 0px 20px 0px;
 }
@@ -44,14 +44,14 @@
   font-size: 15px;
 }
 .navbar-dark {
-  background-color: #4A889B;
+  background-color: #8F7E4F;
 }
 .home{
-  background-color: rgb(195, 230, 212);
+  background-color: #C3C49E;
 }
 .carousel{
    margin-left: 150px; 
-}\s
+}
 .meshume{
   color: blue;
   font-size: small;
