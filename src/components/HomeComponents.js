@@ -92,6 +92,15 @@ class Home extends Component {
             <div className="carousel" style={{ marginLeft: "-20px" }}>
               <CarouselComponent />
             </div>
+            <div className="foto">
+              <img
+                style={{ margin: "auto" }}
+                src="assets/images/captcha03.png"
+                height="200"
+                width="300"
+                alt="captcha"
+              />
+            </div>
           </div>
 
           <div className="row row-header">
@@ -126,26 +135,27 @@ class Home extends Component {
                   Shfaq captcha
                 </Button>
 
-                <Modal
-                  isOpen={this.state.isModalOpen}
-                  // toggle={this.toggleModal}
-                  style={{ width: "29%" }}>
+                <Modal isOpen={this.state.isModalOpen}>
                   <ModalHeader toggle={this.toggleModal}>PUPCHA </ModalHeader>
                   <ModalBody>
                     <p>Per te vazhduar me tej zgjidheni PUPCHA!</p>
-                    <Puzzle
-                      style={{ width: "100%" }}
-                      image={this.state.fotot[this.getRndInteger(0, 5)]}
-                      level={2}
-                      onDone={this.doneCaptcha}
-                    />
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}>
+                      <Puzzle
+                        style={{ width: "100%", margin: "auto" }}
+                        image={this.state.fotot[this.getRndInteger(0, 5)]}
+                        level={2}
+                        onDone={this.doneCaptcha}
+                      />
+                    </div>
                   </ModalBody>
                 </Modal>
 
-                <Modal
-                  isOpen={this.state.open}
-                  toggle={this.toggleModal1}
-                  style={{ width: "28%" }}>
+                <Modal isOpen={this.state.open} toggle={this.toggleModal1}>
                   <ModalHeader toggle={this.toggleModal1}>
                     {" "}
                     Pergezime!{" "}
@@ -161,10 +171,7 @@ class Home extends Component {
                 </Modal>
 
                 {!this.state.isModalOpen && this.state.prova && (
-                  <Modal
-                    isOpen={this.state.prova}
-                    toggle={this.toggleModal2}
-                    style={{ width: "28%" }}>
+                  <Modal isOpen={this.state.prova} toggle={this.toggleModal2}>
                     <ModalHeader toggle={this.toggleModal2}>
                       {" "}
                       Provo perseri!{" "}

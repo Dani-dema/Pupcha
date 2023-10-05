@@ -15,14 +15,13 @@ class Header extends Component {
     return (
       <>
         <Navbar dark expand="md">
-          <div className="container">
+          <div className="menu">
             <Nav navbar>
               <NavItem>
                 <NavLink className="nav-link" to="/home">
                   <span
                     className="fa fa-book fa-lg"
-                    style={{ justifyContent: "center", marginLeft: "300px" }}>
-                    {" "}
+                    style={{ justifyContent: "center" }}>
                     Zhvillimi i sistemit CAPTCHA bazuar në puzzle{" "}
                   </span>
                 </NavLink>

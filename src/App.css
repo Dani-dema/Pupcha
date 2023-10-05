@@ -1,5 +1,11 @@
 .App {
 }
+.menu{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -41,6 +47,10 @@
   margin-left:40px;
 }
 .punoi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
   font-size: 15px;
 }
 .navbar-dark {
@@ -70,4 +80,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 900px) {
+.carousel{
+  display: none !important;
+}
+.foto{
+  display: flex !important;
+  width: 100%;
+}
+}
+
+.foto{
+  display: none;
 }
